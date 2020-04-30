@@ -14,8 +14,20 @@
 #### 变量(variables)
 
 #### 混合(mixins)
-
+```
+.color(@c){     // 相当于函数定义 传参
+    color: @c；
+    border：1px solid @c;
+}
+// 使用
+.boot{
+    width: 100px;
+    height: 100px;
+    .color(green)  // 出入传入参数调用
+}
+```
 #### 嵌套规则(nested-rules)
+'&：代表当前的选择器'
 
 #### 运算(operations)
 

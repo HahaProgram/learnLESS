@@ -1,5 +1,20 @@
-.boot {
-  width: 375px;
-  height: 500px;
-  background-color: red;
+div {
+  width: 100px;
+  height: 100px;
+}
+div ul {
+  list-style: none;
+}
+div li {
+  display: block;
+  height: 50px;
+  width: 50px;
+  border: 1px solid red;
+}
+div li a {
+  text-decoration: none;
+  color: red;
+}
+div li a:hover {
+  color: blue;
 }
