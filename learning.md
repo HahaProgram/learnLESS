@@ -27,7 +27,33 @@
 }
 ```
 #### 嵌套规则(nested-rules)
-'&：代表当前的选择器'
+**&：代表当前的选择器**
+```
+@color: red;
+@active-color: blue;
+@width: 100px;
+@height: 100px;
+div{
+    width: @width;
+    height: @height;
+    ul{
+        list-style: none;
+    }
+    li{
+        display: block;
+        height: 50px;
+        width: 50px;
+        border: 1px solid @color;
+        a{
+            text-decoration: none;
+            color: @color;
+            &:hover{
+                color: @active-color;
+            }
+        }
+    }
+}
+```
 
 #### 运算(operations)
 
